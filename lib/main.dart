@@ -1,4 +1,16 @@
+import 'screens/login_screen.dart';
+import 'screens/register_screen.dart';
+import 'screens/profile_screen.dart';
+import 'screens/settings_screen.dart';
 import 'package:flutter/material.dart';
+//import 'package:google_fonts/google_fonts.dart';
+import 'screens/main_screen.dart';
+import 'screens/mode_select_screen.dart';
+import 'screens/budget_input_screen.dart';
+import 'screens/location_select_screen.dart';
+import 'screens/trip_plan_screen.dart';
+import 'screens/trip_detail_screen.dart';
+import 'screens/save_trip_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,26 +23,28 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Pai Nae',
       theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // TRY THIS: Try running your application with "flutter run". You'll see
-        // the application has a purple toolbar. Then, without quitting the app,
-        // try changing the seedColor in the colorScheme below to Colors.green
-        // and then invoke "hot reload" (save your changes or press the "hot
-        // reload" button in a Flutter-supported IDE, or press "r" if you used
-        // the command line to start the app).
-        //
-        // Notice that the counter didn't reset back to zero; the application
-        // state is not lost during the reload. To reset the state, use hot
-        // restart instead.
-        //
-        // This works for code too, not just values: Most code changes can be
-        // tested with just a hot reload.
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: Color(0xFF4CAF50),
+          background: Color(0xFFFAFAFA),
+        ),
+        scaffoldBackgroundColor: Color(0xFFFAFAFA),
+        // ...existing code...
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MainScreen(),
+      routes: {
+        '/mode': (context) => const ModeSelectScreen(),
+        '/budget': (context) => BudgetInputScreen(),
+        '/LocationSelectScreen': (context) => const LocationSelectScreen(),
+        '/plan': (context) => const TripPlanScreen(),
+        '/detail': (context) => const TripDetailScreen(),
+        '/save': (context) => const SaveTripScreen(),
+        '/profile': (context) => const ProfileScreen(),
+        '/settings': (context) => const SettingsScreen(),
+        '/login': (context) => const LoginScreen(),
+        '/register': (context) => const RegisterScreen(),
+      },
     );
   }
 }
