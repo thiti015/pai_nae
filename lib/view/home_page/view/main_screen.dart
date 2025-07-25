@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'trip_plan_result_screen.dart';
+import '../../detail_trip/view/trip_plan_result_screen.dart';
 
-import 'budget_input_screen.dart';
+import '../../budget_page/view/budget_input_screen.dart';
 
 class MainScreen extends StatelessWidget {
   const MainScreen({super.key});

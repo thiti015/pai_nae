@@ -1,16 +1,16 @@
-import 'screens/login_screen.dart';
-import 'screens/register_screen.dart';
-import 'screens/profile_screen.dart';
-import 'screens/settings_screen.dart';
+import 'view/login/view/login_screen.dart';
+import 'view/register/view/register_screen.dart';
+import 'view/profile/view/profile_screen.dart';
+import 'view/setting/view/settings_screen.dart';
 import 'package:flutter/material.dart';
 //import 'package:google_fonts/google_fonts.dart';
-import 'screens/main_screen.dart';
-import 'screens/mode_select_screen.dart';
-import 'screens/budget_input_screen.dart';
-import 'screens/location_select_screen.dart';
-import 'screens/trip_plan_screen.dart';
-import 'screens/trip_detail_screen.dart';
-import 'screens/save_trip_screen.dart';
+import 'view/home_page/view/main_screen.dart';
+import 'view/budget_page/view/mode_select_screen.dart';
+import 'view/budget_page/view/budget_input_screen.dart';
+import 'view/location_page/view/location_select_screen.dart';
+import 'view/detail_trip/view/trip_plan_screen.dart';
+import 'view/detail_trip/view/trip_detail_screen.dart';
+import 'view/detail_trip/view/save_trip_screen.dart';
 
 void main() {
   runApp(const MyApp());

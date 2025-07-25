@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'trip_plan_result_screen.dart';
+import '../../detail_trip/view/trip_plan_result_screen.dart';
 
 class BudgetInputScreen extends StatefulWidget {
   @override
